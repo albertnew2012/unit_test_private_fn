@@ -3,9 +3,12 @@
 
 class MyClass {
 private:
-    int privateFunction(int a, int b);
+    int privateFunction_add(int a, int b);
+    int privateFunction_mul(int a, int b);
 
-    friend class MyClassTest_FriendPrivateFunction_Test;  // Grant access to the test case
+    // Friend declarations for specific test cases
+    friend class MyClassTest_FriendPrivateFunction1_Test;
+    friend class MyClassTest_FriendPrivateFunction2_Test;
 };
 
 #endif // MYCLASS_HPP

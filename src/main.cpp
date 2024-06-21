@@ -3,7 +3,8 @@
 
 int main() {
     MyClass myClass;
-    int result = myClass.privateFunction(5, 3);
+    // This is gonna cause compilation error
+    int result = myClass.privateFunction_add(5, 3);
     std::cout << "The result of 5 + 3 is: " << result << std::endl;
     return 0;
 }
